@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="styles/style.css" rel="stylesheet">
+
+  <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+<body>
+
+<main>
+  <div class="container">
+    <div class="sidebar">
+      <!-- Sidebar start -->
+      <div class="sidebarInfo">
+        <p>Step 1</p>
+        <p>Your info</p>
+      </div>
+
+      <div class="sidebarPlan">
+        <p>Step 2</p>
+        <p>Select plan</p>
+      </div>
+
+      <div class="sidebarAddOns">
+        <p>Step 3</p>
+        <p>Add-ons</p>
+      </div>
+
+      <div class="sidebarSummary">
+        <p>Step 4</p>
+        <p>Summary</p>
+      </div>  
+    </div>  
+      <!-- Sidebar end -->
+
+    <div class="mobileHeader">
+      <!-- <img src="assets/images/bg-sidebar-mobile.svg"> -->
+
+      <ul class="fourSteps">
+        <li class="fourSteps1">①</li>
+        <li class="fourSteps2">②</li>
+        <li class="fourSteps3">③</li>
+        <li class="fourSteps4">④</li>
+      </ul>  
+    </div>  
+    <!-- Step 1 start -->
+    <div class="multiStepForm">
+      <div class="step1Personal stepBloc">
+        <div class="step1PersonalInfo">
+          <h2>Personal info</h2>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+        <div class="step1PersonalForm">
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Email Address">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+          </form>
+        </div>
+        <div class="buttonsNextAndBack">
+          <button class="step3AddOnsButtonsBack backButton">Go Back</button>
+          <button class="step3AddOnsButtonsNext nextbutton">Next Step</button>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
+      <div class="step2Plan stepBloc">
+        <div class="step2PlanInfo">
+          <h2>Select your plan</h2>
+          <p>You have the option of monthly or yearly billing.</p>
+        </div>
+        <div class="step2PlanOptions">
+          <div class="step2PlanOptionsArcade">
+            <p>Arcade</p>
+            <p>$9/mo</p>
+          </div>
+          <div class="step2PlanOptionsAdvanced">
+            <p>Advanced</p>
+            <p>$12/mo</p>
+          </div>
+          <div class="step2PlanOptionsPro">
+            <p>Pro</p>
+            <p>$15/mo</p>
+          </div>
+          <div class="step2PlanMonthlyYearly">
+            <button class="monthlyYearlyButtonsMonthly">Monthly</button>
+            <button class="monthlyYearlyButtonsYearly">Yearly</button>
+          </div>
+          <div class="buttonsNextAndBack">
+            <button class="step3AddOnsButtonsBack backButton">Go Back</button>
+            <button class="step3AddOnsButtonsNext nextbutton">Next Step</button>
+          </div>
+        </div>
+      </div>
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+        <div class="step3AddOns stepBloc">
+          <div class="step3AddOnsInfo">
+            <h2>Pick add-ons</h2>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+          <div class="step3AddOnsOnline">
+            <h3>Online service</h3>
+            <p>Access to multiplayer games</p>
+            <p>+$1/mo</p>
+          </div>
+          <div class="step3AddOnsCloud">
+            <h3>Larger storage</h3>
+            <p>Extra 1TB of cloud save</p>
+            <p>+$2/mo</p>
+          </div>
+          <div class="step3AddOnsProfile">
+            <h3>Customizable profile</h3>
+            <p>Custom theme on your profile</p>
+            <p>+$2/mo</p>
+          </div>
+          <div class="buttonsNextAndBack">
+            <button class="step3AddOnsButtonsBack backButton">Go Back</button>
+            <button class="step3AddOnsButtonsNext nextbutton">Next Step</button>
+          </div>
+        </div>
+          <!-- Step 3 end -->
+
+          <!-- Step 4 start -->
+          <div class="step4Finishing stepBloc">
+            <div class="step4FinishingInfo">
+              <h2>Finishing up</h2>
+              <p>Double-check everything looks OK before confirming.</p>
+            </div>
+            <div class="confirmOptions">
+              <div class="confirmOptionsPlan">
+                <p>Plan</p>
+                <p id="arcadeOption">Arcade</p>
+                <p id="advancedOption">Advanced</p>
+                <p id="proOption">Pro</p>
+              </div>
+              <div class="confirmOptionsBilling">
+                <p>Billing</p>
+                <p id="monthlyBilling">Monthly</p>
+                <p id="yearlyBilling">Yearly</p>
+              </div>
+              <div class="confirmOptionsAddOns">
+                <p>Add-ons</p>
+                <p id="onlineServiceAdd">Online service</p>
+                <p id="largerStorageAdd">Larger storage</p>
+                <p id="customizableProfileAdd">Customizable profile</p>
+              </div>
+            </div>
+            <div class="step4FinishingButtons">
+              <button class="step4FinishingButtonsBack backButton">Go Back</button>
+              <button class="step4FinishingButtonsNext nextButton">Confirm</button>
+            </div>
+          </div>
+          <!-- Dynamically add subscription and add-on selections here -->
+          <!-- Step 4 end -->
+
+          <!-- Step 5 start -->
+          <div class="step5Confirmation stepBloc">
+            <div class="step5ConfirmationInfo">
+              <h2>Thank you!</h2>
+              <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+            </div>
+          </div>
+          <!-- Step 5 end -->
+        </div>
+      </div>
+</main>
+</body>
+
+</html>
+
+<script src="js/app.js"></script>
+
